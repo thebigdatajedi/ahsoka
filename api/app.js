@@ -11,7 +11,7 @@ mongoose.Promise = global.Promise;
 //Adds connection to database using mongoose
 //for <dbuser>:replace with your username, <dbpassword>: replace with your password.
 //<DATABASE_URL>: replace with database url, example:ds234562.mlab.com:17283
-mongoose.connect('<dbuser>:<dbpassword>@<DATABASE_URL>/appointments', {
+mongoose.connect('cruzfg:Butthead1@ahsoka.kyckrab.mongodb.net/?retryWrites=true&w=majority', {
   useMongoClient: true
 });
 //This enabled CORS, Cross-origin resource sharing (CORS) is a mechanism that allows restricted resources (e.g. fonts)
