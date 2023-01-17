@@ -1,11 +1,9 @@
-const {Appointment, Slot} = Model;
+const Slot = require('../models');
 const slotController = {
-    all (req, res) {
+    all(req, res) {
         // Returns all Slots
         Slot.find({})
             .exec((err, slots) => res.json(slots))
     }
 };
-
-
-export default slotController;
+module.exports  = slotController;

@@ -1,7 +1,8 @@
+const mongoose = require('mongoose');
 const Schema = mongoose.Schema,
     model = mongoose.model.bind(mongoose),
     ObjectId = mongoose.Schema.Types.ObjectId;
-const slotSchema = new Schema ({
+const slotSchema = new Schema({
     slot_time: String,
     slot_date: String,
     created_at: Date
@@ -12,7 +13,7 @@ const appointmentSchema = new Schema({
     name: String,
     email: String,
     phone: Number,
-    slots:{type: ObjectId, ref: 'Slot'},
+    slots: {type: ObjectId, ref: 'Slot'},
     created_at: Date
 });
 const Appointment = model('Appointment', appointmentSchema);

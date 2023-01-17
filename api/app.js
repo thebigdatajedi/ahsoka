@@ -1,3 +1,4 @@
+const express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
@@ -11,9 +12,13 @@ mongoose.Promise = global.Promise;
 //Adds connection to database using mongoose
 //for <dbuser>:replace with your username, <dbpassword>: replace with your password.
 //<DATABASE_URL>: replace with database url, example:ds234562.mlab.com:17283
-mongoose.connect('cruzfg:Butthead1@ahsoka.kyckrab.mongodb.net/?retryWrites=true&w=majority', {
-  useMongoClient: true
-});
+// mongoose.connect('mongodb+srv://cruzfg:Butthead1@ahsoka.kyckrab.mongodb.net/?retryWrites=true&w=majority', {
+//   useMongoClient: true
+// });
+
+mongoose.connect('mongodb+srv://cruzfg:Butthead1@ahsoka.kyckrab.mongodb.net/?retryWrites=true&w=majority', {
+  useNewUrlParser: true,});
+
 //This enabled CORS, Cross-origin resource sharing (CORS) is a mechanism that allows restricted resources (e.g. fonts)
 //on a web page to be requested from another domain outside the domain from which the first resource was served
 app.all('/*', function(req, res, next) {
