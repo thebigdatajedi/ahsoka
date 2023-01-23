@@ -16,7 +16,7 @@ mongoose.Promise = global.Promise;
 //   useMongoClient: true
 // });
 
-mongoose.connect('mongodb+srv://cruzfg:Butthead1@ahsoka.kyckrab.mongodb.net/appointmentsAPI');
+mongoose.connect('mongodb+srv://cruzfg:Butthead1@ahsoka.kyckrab.mongodb.net/appointmentApi');
 
 
 //This enabled CORS, Cross-origin resource sharing (CORS) is a mechanism that allows restricted resources (e.g. fonts) 

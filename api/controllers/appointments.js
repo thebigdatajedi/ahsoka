@@ -14,6 +14,8 @@ const appointmentController = {
       created_at: Date.now()
     });
     newslot.save();
+
+
     // Creates a new record from a submitted form
     var newappointment = new Appointment({
       name: requestBody.name,
@@ -39,6 +41,7 @@ const appointmentController = {
       Appointment.find({ _id: saved._id })
         .populate("slots")
         .exec((err, appointment) => res.json(appointment));
+
       const from = "13312473389"
       const to = "18013727577"
       const text = 'A text message sent using the Vonage SMS API'
