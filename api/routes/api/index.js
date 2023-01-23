@@ -1,7 +1,9 @@
-var express = require('express');
-const router = express.Router(), appointmentController = require('../../controllers/appointments'),
-    // slotController = require('../../controllers/slot');
-    slotController = require('../../controllers/slots');
+const express = require('express');
+
+const router = express.Router();
+const appointmentController = require('../../controllers/appointments');
+const slotController = require('../../controllers/slot');
+
 router.get('/appointments', appointmentController.all);
 router.get('/retrieveSlots', slotController.all);
 router.post('/appointmentCreate', appointmentController.create);
