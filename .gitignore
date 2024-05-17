@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+/node_modules/*
 /.pnp
 .pnp.js
 
@@ -21,3 +22,25 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+.DS_*
+*.log
+logs
+**/*.backup.*
+**/*.back.*
+node_modules
+bower_components
+*.sublime*
+psd
+thumb
+sketch
+
+/.idea
+/.vscode
+/.vs
+
+#for vue.js projects - over doing it once more. Yeah for me!!!
+/.nuxt
+/.nuxt-generate
+/.nuxt-storybook
+/.nuxt-storybook-static
